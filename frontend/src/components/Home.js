@@ -1,8 +1,14 @@
 import React from 'react';
 import sample from '../images/sample.jpg';
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 export default function Home() {
+ 
+    const { loginWithRedirect } = useAuth0();
+
     return (
+        
         <div>
             <div className="container">
                 <div className="col s12 m7">
@@ -14,6 +20,7 @@ export default function Home() {
                         <div className="card-content">
                             <p>Bienvenidos a la app de gestión de la tienda de productos para mascotas Don Cat´s Shop, elaborado por el equipo de desarrollo CatSoft de misión TIC ciclo 3.</p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
