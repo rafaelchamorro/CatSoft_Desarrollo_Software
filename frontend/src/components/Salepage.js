@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import M from 'materialize-css';
+import PrivateRoute from './PrivateRoute';
 
 export default class Salepage extends Component {
     constructor() {
@@ -280,6 +281,8 @@ export default class Salepage extends Component {
 
     render() {
         return (
+            <PrivateRoute>
+
             <div>
                 <center>
                     <h4 className="grey-text text-darken-4" >Gestión de ventas</h4>
@@ -478,6 +481,7 @@ export default class Salepage extends Component {
                     </div>
                 </div>
             </div>
+            </PrivateRoute>
         )
     }
 }
