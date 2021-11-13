@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import M from 'materialize-css';
+import PrivateRoute from './PrivateRoute';
 
 
 export default class Productpage extends Component {
@@ -125,6 +126,8 @@ export default class Productpage extends Component {
 
     render() {
         return (
+            <PrivateRoute>
+
             <div>
                 <center>
                     <h4 className="brown-text text-darken-2">Gestión de productos</h4>
@@ -229,6 +232,7 @@ export default class Productpage extends Component {
                 </div>
 
             </div>
+            </PrivateRoute>
         )
     }
 }
