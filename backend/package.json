@@ -5,7 +5,8 @@
   
   "scripts": {
     
-    "start": "node index.js"
+    "start": "node /app/src/index.js"
+    
   },
   "engines": {
     "node": "14.x"
