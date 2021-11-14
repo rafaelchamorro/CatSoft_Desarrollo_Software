@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/index.js"
+    "dev": "node src/index.js",
+    "start": "node src/index.js"
   },
   "engines": {
     "node": "14.x"
@@ -23,4 +24,5 @@
   "devDependencies": {
     "nodemon": "^2.0.14"
   }
+
 }
